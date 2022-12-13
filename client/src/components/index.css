@@ -1,0 +1,244 @@
+.big__Sidebar{
+    height: 100vh;
+    width: 200px;
+    background-color: aquamarine;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+}
+
+.link__Text{
+    margin-left: 10px;
+}
+
+.single__Link{
+    margin-top: 40px;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.single__Link:hover{
+    background-color: aqua;
+}
+
+
+.small__Sidebar{
+    display: none; 
+}
+
+.link__Text{
+    width: 196px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.small__Wrapper{
+    position: absolute;
+    background-color: aquamarine;
+    width: 50%;
+    margin-left: 17%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 10px;
+    position: absolute;
+top: 72px;
+/* z-index:-200000; */
+}
+
+.ham{
+    /* margin-left: px; */
+    margin-top: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: -20px;
+}
+.cross{
+    position: absolute;
+    /* cross */
+    z-index: 300;
+    cursor: pointer;
+    right: 10px;
+    top: 10px;
+    color: white;
+}
+
+.small__Sidebar .single__Link{
+    /* background-color: red; */
+    width: 100%;
+    /* z-index: 100000; */
+}
+.wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0,.7);
+    /* background: black; */
+    /* ha */
+    /* z-index: 10; */
+}
+
+.user__Save{
+    position: absolute;
+    bottom: 10px;
+    right: 14px;
+    visibility: hidden;
+}
+.user__Image{
+    position: absolute;
+    bottom: 40px;
+    left: 14px;
+    visibility: hidden;
+    color: black;
+}
+
+.single__Pin:hover .user__Image{
+    visibility: visible;
+
+}
+.single__Pin:hover .user__Save{
+    visibility: visible;
+}
+
+
+
+.sidebarIndex{
+  z-index: 222;
+}
+
+
+
+
+@media screen and (max-width:700px){
+ .small__Sidebar{
+    display: block;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    /* z-index: 201; */
+/* ha */
+ } 
+
+ .big__Sidebar{
+    display: none;
+ }
+
+ .small__Wrapper{
+    /* z-index: 1000000; */
+    /* ha */
+ }
+ .wrapper{
+    /* z-index: -100; */
+    /* ha */
+ }
+}
+
+
+
+ .form {
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+  .form-row {
+    margin-bottom: 0;
+  }
+
+
+  /* pins home*/
+
+.single__Pin{
+    position: relative;
+    cursor: pointer;
+    /* width: 400px; */
+}
+
+
+
+
+.pin__Main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(14rem,1fr));
+    gap:1.2rem
+}
+ .delete{
+    position: absolute;
+    top:10px;
+    /* ha */
+    /* z-index: 1000; */
+    color: red;
+    display: none;
+    visibility: hidden;
+    cursor: pointer;
+    left: 20px;
+    cursor: pointer;
+} 
+
+.download{
+    cursor: pointer;
+    position: absolute;
+    visibility: hidden;
+    right: 50px;
+    top: 10px;
+    color: blue;
+    /* ha */
+    /* z-index:200; */
+    /* background-color: red; */
+    
+ }  
+
+.image__Link{
+    cursor: pointer;
+    position: absolute;
+    visibility: hidden;
+    bottom: 80px;
+    left: 20px;
+    color: black;
+}
+
+.save{
+    position: absolute;
+    visibility: hidden;
+    cursor: pointer;
+    right: 50px;
+    bottom: 50px;
+    /* ha */
+    /* z-index: 200; */
+    border-radius: 50%;
+ }
+
+ .single__Pin img{
+    width: 100%;
+ }
+
+.single__Pin:hover .download{
+    visibility: visible;
+}
+.single__Pin:hover .save{
+    visibility: visible;
+}
+.single__Pin:hover .delete{
+    visibility: visible;
+}
+.single__Pin:hover .image__Link{
+    visibility: visible;
+}
+
+
+@media screen and (max-width:600px){
+    .userPins__Btns Button{
+        margin-right: 30px;
+    }
+
+    .home__Search{display: none;}
+}
